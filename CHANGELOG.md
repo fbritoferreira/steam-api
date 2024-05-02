@@ -1,5 +1,11 @@
 # @fbritoferreira/steam-api
 
+## 1.0.0-alpha.3
+
+### Patch Changes
+
+- c0be787: Update commands
+
 ## 1.0.0-alpha.2
 
 ### Patch Changes
