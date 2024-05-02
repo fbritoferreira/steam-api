@@ -16,31 +16,25 @@ jobs:
 
     runs-on: "ubuntu-latest"
     steps:
-      - id: "checkout"
-        name: "Check out Git repository"
-        uses: "actions/checkout@v3"
-
-
-      - id: "setup-node"
-        name: "Set up Node.js"
-        uses: "actions/setup-node@v3"
+      - name: Checkout repo
+        uses: actions/checkout@master
         with:
-          node-version-file: ".nvmrc"
-          cache: "pnpm"
+          fetch-depth: 0
+
+      - name: Set up Node.js 22
+        uses: actions/setup-node@master
+        with:
+          node-version: 22
 
       - name: Enable pnpm with corepack
         run: corepack enable
 
-      - id: "install-dependencies"
-        name: "Install Node.js dependencies"
-        run: |
-          set -euo pipefail
-          pnpm install --frozen-lockfile
-      - id: "build"
-        name: "Build documentation"
-        run: |
-          set -euo pipefail
-          pnpm run docs
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: "Build documentation"
+        run: pnpm run docs
+        
       - id: "upload-documentation"
         name: "Upload Pages artifact"
         uses: "actions/upload-pages-artifact@v2"
