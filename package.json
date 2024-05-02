@@ -1,0 +1,24 @@
+{
+  "name": "steam-api",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "dist",
+    "src/",
+    "index.d.ts"
+  ],
+  "main": "./dist/mod.ts",
+  "module": "./dist/mod.ts",
+  "types": "./index.d.ts",
+  "exports": {
+    "types": "./index.d.ts",
+    "import": "./dist/mod.js"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
