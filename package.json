@@ -20,7 +20,8 @@
     "docs": "typedoc",
     "prepare": "husky",
     "lint": "eslint src",
-    "lint:fix": "eslint src --fix"
+    "lint:fix": "eslint src --fix",
+    "release": "changesets publish"
   },
   "packageManager": "pnpm@9.0.6",
   "dependencies": {
