@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      axios:
+        specifier: ^1.6.8
+        version: 1.6.8
     devDependencies:
       '@changesets/cli':
         specifier: ^2.27.1
@@ -14,9 +18,6 @@ importers:
       '@eslint/js':
         specifier: ^9.1.1
         version: 9.1.1
-      axios:
-        specifier: ^1.6.8
-        version: 1.6.8
       eslint:
         specifier: ^9.1.1
         version: 9.1.1
