@@ -1,11 +1,25 @@
 name: Publish
 on:
-  push:
-    branches:
-      - main
+  release:
+    types: [published]
 
 jobs:
-  publish:
+  npm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          cache: 'pnpm'
+          node-version: '22.x'
+          registry-url: 'https://registry.npmjs.org'
+      - run: corepack enable pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm publish --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+  jsr:
     runs-on: ubuntu-latest
 
     permissions:
@@ -14,6 +28,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-
       - name: Publish package
         run: npx jsr publish
+        
