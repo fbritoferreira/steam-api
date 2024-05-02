@@ -19,8 +19,9 @@
     "docs": "typedoc",
     "prepare": "husky",
     "lint": "eslint src",
+    "changeset": "changeset",
     "lint:fix": "eslint src --fix",
-    "release": "node --run build && pnpm changesets publish"
+    "release": "pnpm run build && pnpm run changesets publish"
   },
   "packageManager": "pnpm@9.0.6",
   "dependencies": {
