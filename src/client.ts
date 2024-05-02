@@ -1,7 +1,7 @@
 /**
  * This module contains related to the base steam api client factory.
  * @module
- * 
+ *
  * ```ts
  * import { createSteamApiClient } from "@fbritoferreira/steam-api";
  *
