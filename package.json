@@ -16,6 +16,7 @@
   },
   "scripts": {
     "build": "tsc",
+    "test": "echo \"no test specified\" && exit 0",
     "docs": "typedoc",
     "prepare": "husky",
     "lint": "eslint src",
