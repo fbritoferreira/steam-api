@@ -1,6 +1,5 @@
 {
   "name": "@fbritoferreira/steam-api",
-  "private": true,
   "version": "1.0.0-alpha.1",
   "type": "module",
   "files": [
@@ -21,7 +20,7 @@
     "prepare": "husky",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
-    "release": "node --run build && changesets publish"
+    "release": "node --run build && pnpm changesets publish"
   },
   "packageManager": "pnpm@9.0.6",
   "dependencies": {
