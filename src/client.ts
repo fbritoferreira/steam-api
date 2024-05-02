@@ -63,7 +63,7 @@ export interface SteamApiClient {
  * @param config Configuration object for the API client.
  * @returns An instance of Steam API client.
  */
-export function createSteamApiClient(config: SteamApiConfig) {
+export function createSteamApiClient(config: SteamApiConfig): SteamApiClient {
   return {
     /**
      * API key for accessing Steam API.
