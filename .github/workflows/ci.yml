@@ -23,6 +23,7 @@ jobs:
 
       - name: Enable pnpm with corepack
         run: corepack enable pnpm
+
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
@@ -34,10 +35,3 @@ jobs:
       
       - name: Generate docs
         run: pnpm run docs
-
-      - name: Create Release Pull Request or Publish to npm
-        id: changesets
-        uses: changesets/action@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
