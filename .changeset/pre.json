@@ -5,6 +5,7 @@
     "@fbritoferreira/steam-api": "0.0.0"
   },
   "changesets": [
+    "friendly-knives-wonder",
     "short-wombats-fail"
   ]
 }
