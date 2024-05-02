@@ -16,9 +16,14 @@
     "import": "./dist/mod.js"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "docs": "typedoc",
+    "prepare": "husky"
   },
   "devDependencies": {
+    "husky": "^9.0.11",
+    "typedoc": "^0.25.13",
+    "typedoc-material-theme": "^1.0.2",
     "typescript": "^5.4.5"
   }
 }
