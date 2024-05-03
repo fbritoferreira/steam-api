@@ -21,7 +21,7 @@
     "lint": "eslint src",
     "changeset": "changeset",
     "lint:fix": "eslint src --fix",
-    "release": "pnpm run build && pnpm run changesets publish",
+    "release": "pnpm run build && pnpm run changeset publish",
     "jsr:update-version": "tsx scripts/update-jsr-version.ts"
   },
   "packageManager": "pnpm@9.0.6",
