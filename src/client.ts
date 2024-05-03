@@ -56,6 +56,13 @@ export interface SteamApiClient {
    * @param key The API key.
    */
   setKey(key: string): void;
+
+  /**
+   * Method to build the URL for a given API endpoint.
+   * @param path The path to the API endpoint.
+   * @returns The URL for the API endpoint.
+   */
+  buildUrl(path: string): string;
 }
 
 /**
@@ -86,6 +93,13 @@ export function createSteamApiClient(config: SteamApiConfig): SteamApiClient {
      */
     setKey(key: string) {
       this.key = key;
+    },
+    /**
+     * Method to build the URL for a given API endpoint.
+     * @param path The path to the API endpoint.
+     */
+    buildUrl(path: string) {
+      return `${STEAM_API_BASE_URL}${path}&key=${this.key}&format=${this.format}`;
     },
   };
 }

@@ -5,3 +5,10 @@ export {
   type SteamApiConfig,
   createSteamApiClient,
 } from "./client";
+
+export { getNewsForApp } from "./get-news-for-app/get-news-for-app";
+export type {
+  AppNewsResponse,
+  Appnews,
+  Newsitem,
+} from "./get-news-for-app/response";
