@@ -1,5 +1,11 @@
 # @fbritoferreira/steam-api
 
+## 1.0.0-alpha.5
+
+### Patch Changes
+
+- 7549dad: Update changeset command to point to the correct place
+
 ## 1.0.0-alpha.4
 
 ### Patch Changes
