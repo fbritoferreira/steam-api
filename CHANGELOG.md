@@ -1,5 +1,11 @@
 # @fbritoferreira/steam-api
 
+## 1.0.0-alpha.4
+
+### Patch Changes
+
+- e8cc278: Add script to keep the same version in jsr as npm
+
 ## 1.0.0-alpha.3
 
 ### Patch Changes
