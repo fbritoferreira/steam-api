@@ -1,5 +1,22 @@
 # @fbritoferreira/steam-api
 
+## 1.0.0
+
+### Major Changes
+
+- 93c7cc9: Add steam client factory
+
+### Minor Changes
+
+- dedf63f: Update explicit return type to `createSteamApiClient`
+
+### Patch Changes
+
+- 7549dad: Update changeset command to point to the correct place
+- 8c50e65: Update scripts
+- c0be787: Update commands
+- e8cc278: Add script to keep the same version in jsr as npm
+
 ## 1.0.0-alpha.5
 
 ### Patch Changes
