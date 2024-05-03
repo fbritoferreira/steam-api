@@ -27,6 +27,14 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - run: corepack enable
+      - run: pnpm install --frozen-lockfile
+      - name: Update jsr version
+        run: pnpm run jsr:update-version
       - name: Publish package
         run: npx jsr publish
         
