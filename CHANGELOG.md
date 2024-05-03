@@ -1,5 +1,11 @@
 # @fbritoferreira/steam-api
 
+## 1.1.0
+
+### Minor Changes
+
+- c16f6a9: Add `get-news-for-app` module
+
 ## 1.0.0
 
 ### Major Changes
