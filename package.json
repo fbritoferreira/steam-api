@@ -6,6 +6,10 @@
     "dist",
     "src/"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fbritoferreira/steam-api.git"
+  },
   "main": "./dist/mod.ts",
   "module": "./dist/mod.ts",
   "types": "./index.d.ts",
