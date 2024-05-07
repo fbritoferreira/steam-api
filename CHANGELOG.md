@@ -1,5 +1,15 @@
 # @fbritoferreira/steam-api
 
+## 1.2.0
+
+### Minor Changes
+
+- 21cc91d: Add `getPlayerSummaries` function
+
+### Patch Changes
+
+- 338bb1d: Update getNewsForApp interface
+
 ## 1.1.1
 
 ### Patch Changes
