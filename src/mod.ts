@@ -12,3 +12,10 @@ export type {
   Appnews,
   Newsitem,
 } from "./get-news-for-app/response";
+
+export { getPlayerSummaries } from "./get-player-summaries/get-player-summaries";
+export type {
+  GetPlayerSummariesResponse,
+  GetPlayerSummariesPlayerResponse,
+  Player,
+} from "./get-player-summaries/response";
