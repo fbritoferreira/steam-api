@@ -1,5 +1,11 @@
 # @fbritoferreira/steam-api
 
+## 1.2.1
+
+### Patch Changes
+
+- f018cb2: Update readme to add git repo
+
 ## 1.2.0
 
 ### Minor Changes
