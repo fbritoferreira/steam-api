@@ -1,5 +1,6 @@
-# steam-api
-Typesafe wrapper for steam api
+# @fbritoferreira/steam-api
+
+__Typesafe wrapper for steam api__
 
 
 ## Example
@@ -13,7 +14,7 @@ const client = createSteamApiClient({
   format: "json",
 });
 
-const news = await getNewsForApp("730", client);
+const news = await getNewsForApp(client, "730");
 
 console.log(JSON.stringify(news, null, 2));
 

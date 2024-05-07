@@ -3,13 +3,13 @@ import { AppNewsResponse } from "./response";
 
 /**
  * Retrieves news items for a specific Steam application.
- * @param {string} appId - The ID of the Steam application.
  * @param {SteamApiClient} client - The SteamApiClient instance used to make the API request.
+ * @param {string} appId - The ID of the Steam application.
  * @returns {Promise<AppNewsResponse>} A Promise resolving to the response containing news items for the app.
  */
 export async function getNewsForApp(
-  appId: string,
   client: SteamApiClient,
+  appId: string,
 ): Promise<AppNewsResponse> {
   try {
     const url = client.buildUrl(
