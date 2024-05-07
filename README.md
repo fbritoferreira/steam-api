@@ -1,5 +1,7 @@
 # @fbritoferreira/steam-api
 
+[![JSR](https://jsr.io/badges/@fbritoferreira/steam-api)](https://jsr.io/@fbritoferreira/steam-api)
+[![JSR Score](https://jsr.io/badges/@fbritoferreira/steam-api/score)](https://jsr.io/@fbritoferreira/steam-api)
 __Typesafe wrapper for steam api__
 
 
